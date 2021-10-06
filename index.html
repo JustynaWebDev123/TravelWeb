@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.S.Travel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Karla|Montserrat">
+    <link href="travel.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5c7237f56.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <script src="travel.js"></script>  
+    
+    <header>
+        <div class="logoContainer">
+        <h1 class = "travelLogo">J.S.Travel Expert  </h1>
+        </div>
+
+        <div class="headerContainer">
+
+<div class="time">
+
+    <i class="far fa-clock"></i>
+    <p>Mon - Sat 9.00- 19.00 </p>
+    <small>Sunday closed </small>
+</div>
+
+<div class="contactContainer">
+  <p>Contact us:</p>
+  <i class="fas fa-phone"></i>
+  <i class="far fa-envelope"></i>
+  <i class="fab fa-whatsapp"></i>
+  
+  </div>
+</div>
+ </header>
+ 
+<nav id="navContainer">
+    <a     href =#Home >Home</a>
+    <a     href =#Aboutus>About us </a>
+    <a     href =#Destinations>Destinations</a>    
+    <a     href =#Holidays>Holidays</a>
+    <a     href =#Cruises>Cruises</a>
+    <a     href =#Offers>Special Offers</a>
+
+</nav> 
+<main >
+  <div class="menu-bars" >
+    <input onClick = "activeNav()" type="checkbox" class="toggler">
+    <div id= "mag" class= "hamburger"><div ></div></div>
+<div class = "tropicalImg">
+<div class="travelQuoteContainer">
+    <p class="travelQuote" >"A journey of a thousand miles begins with a single step"
+    </p>
+
+    <div class="encouragmentContainer">
+<h1>Let's begin your journey! </h1>
+<button type = "submit" class="designedTravelBtn">Explore... </button>
+  </div>  
+</div>
+    <form>
+        <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+                <label for= "yourDestination "class="where">Where?</label>
+              <select>
+                <option>Select your destination</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+              <label for="Europe">
+                <input type="checkbox">Europe</label>
+              <label for="NorthAmerica">
+                <input type="checkbox">North America</label>
+              <label for="SouthAmerica">
+                <input type="checkbox">South America</label>
+                <label for="Asia">
+                    <input type="checkbox" >Asia</label>
+                  <label for="Africa">
+                    <input type="checkbox" >Africa</label>
+                  <label for="Australia">
+                    <input type="checkbox" >Australia</label>
+            </div>
+          </div>
+     
+     <label for = "when">  When</label>
+     <input type="date" id="fromDate" name="customerFromDate" placeholder="Any date..."> 
+     <label for = "howLong">To?</label>
+     <input type="date" id="toDate" name="holidayDuration" placeholder="Any date..."> 
+<label for="room">Room(s)</label>
+<select type="number" name="roomAmount" >
+   
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+</div>
+</form> 
+
+
+
+
+<span class="imgText"> Our popular destinations </span>
+
+<div class=imgContainer>
+
+<div class="pic1">
+    <img src="Aruba.jpg" alt="ArubaPic" style= width:250px;>
+<p>Aruba £1890/14 days </p>
+  </div>
+
+<div class = "pic2">
+    <img src = "seychelles.jpg" alt="SeychellesPic" style= width:250px height="180px;">
+    <p>Seychelles £1450/ 10days</p>
+  </div>
+
+<div class="pic3">
+    <img src = "venice.jpg" class="pic2size" alt="VenicePic" style= width:250px; >
+    <p>Venice £450/ 7 days </p>
+  </div>
+
+</div>
+
+<div class="socialMediaContainer">
+  <p> Find us on:</p>
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-google-plus-g"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-pinterest"></i>
+  <i class="fab fa-youtube"></i>
+</div>
+
+</main>
+
+
+
+<footer class="footer">
+    <div class="bottomPage">
+    <p>© J.S.Travel Expert <br> All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

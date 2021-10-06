@@ -1,0 +1,1563 @@
+@media only screen and (max-width: 375px){
+
+  *{
+    box-sizing: border-box;
+  }
+
+ .tropicalImg{
+    background-image:url("beach.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+    border-bottom: 1px solid rgb(65, 174, 247);     
+        }
+
+
+.travelLogo{
+  font-size: 18px;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.808);
+  width:40%;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.445);
+ 
+}
+header{
+  background-color: rgba(7, 19, 189, 0.897);
+  padding:15px;
+  border: 1px  solid rgba(12, 2, 102, 0.329);
+ 
+} 
+
+.headerContainer{
+  width:60%;
+  float: right;
+font-size: 10px;
+position: relative;
+color:rgba(255, 255, 255, 0.637);
+font-family: Karla;
+display:flex;
+justify-content: space-evenly;
+top:-40px;
+
+
+}
+
+.contactContainer{
+text-align: center;
+justify-content: space-evenly;
+position: relative;
+top:-20px;
+  
+}
+
+.contactContainer > i{
+
+padding:3px;
+font-size:1.3em;
+
+
+}
+.time{
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+top:-16px;
+  
+  
+}
+
+.travelQuote{
+  
+  text-align: center;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.616);
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  
+}
+
+.encouragmentContainer{
+  color: white;
+  text-align: center;
+  font-family:Montserrat;
+  
+}
+
+.designedTravelBtn{
+  padding:15px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Karla;
+  background-color: rgba(161, 224, 243, 0.164);
+  color:rgb(255, 255, 255);
+  border:white 2px dotted;
+  box-shadow: 0px  0px 3px 3px  rgba(10, 235, 223, 0.329), 0px 0px 8px 3px rgb(253, 253, 253) ;
+  cursor: pointer;
+  width:30%;
+}
+
+label{
+  color:white;
+  font-size: 15px;
+  text-align: center;
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ padding:5px;
+ margin:5px;
+ 
+}
+
+.menu-bars {
+  position:relative;
+  top:0;
+  left:0;
+  z-index: 1;
+ 
+
+}
+
+.menu-bars .toggler {
+  position:absolute;
+  top:0;
+  left:0;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  opacity:0;
+  z-index: 1;
+}
+
+.menu-bars .hamburger {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 80px;
+  height: 50px;
+  padding:1rem;
+  background-color:transparent;
+display:flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s ease;
+
+
+
+}
+
+.menu-bars .hamburger > div {
+position: relative;
+width: 100%;
+height:6px;
+background-color:rgb(255, 255, 255);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow: 2px 2px 5px  rgb(149, 232, 238);
+z-index: 3;
+}
+
+.menu-bars .hamburger > div:before,
+.menu-bars .hamburger > div:after{
+  content: '' ;
+  position: absolute;
+  top:-10px;
+  width: 100%;
+  height: 6px;
+  background:inherit;
+  box-shadow: 2px 2px 5px rgb(149, 232, 238);
+}
+
+.menu-bars .hamburger > div:after{
+  top:10px;;
+}
+.menu-bars .toggler:checked + .hamburger > div{
+  transform:rotate(135deg);
+}
+
+.menu-bars .toggler:checked + .hamburger > div:before,
+.menu-bars .toggler:checked + .hamburger > div:after{
+  top:0;
+  transform:rotate(90deg);
+
+}
+
+.menu-bars .toggler:checked:hover + .hamburger > div{
+
+  transform: rotate(225deg);
+
+}
+
+
+
+#navContainer{
+  display: grid;
+  width:55%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  padding:1px;
+ display:none;
+  margin-top:50px;
+
+
+}
+
+#navContainer a{
+  display: grid;
+  background-color: #fff;
+  padding:15px;
+  text-align: center;
+  text-decoration: none;
+  color:rgba(2, 52, 82, 0.959);;
+  font-size: 17px;
+  font-family: Karla;
+  border-bottom: rgb(106, 106, 131) solid 1px;
+  box-shadow: 0px  0px 3px 3px  rgba(127, 216, 216, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+
+  
+}
+
+form{
+ text-align: center;
+ display:grid;
+ justify-content: center;
+ align-content: center;
+ 
+}
+
+.multiselect {
+    width: 200px;
+ position: relative;
+ left:-10px;
+  }
+    
+  
+  .selectBox {
+    position: relative;
+  
+  }
+
+
+  
+  .selectBox select {
+    border-radius: 10px;
+    border:rgba(255, 255, 255, 0.418) 2px solid;
+    width: 100%;
+    padding:7px;
+    background-color: rgba(161, 224, 243, 0.562);
+    font-size: 13px;
+    font-family: Karla;
+    color:rgb(252, 249, 249);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    
+      }
+  
+  .overSelect {
+    position: absolute;
+    left:0 ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    
+   
+    
+  }
+  
+  #checkboxes {
+    border-radius:5px;
+    border: 2px hsla(0, 0%, 100%, 0.411) solid;
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+   position: relative;
+   left:10px;
+  }
+  
+  #checkboxes label {
+    display:block;
+    color:rgba(255, 255, 255, 0.904);
+    font-size: 13px;
+    text-align: left;
+    font-family: Karla;
+    padding:0;
+    
+  }
+  
+  #checkboxes label:hover {
+    background-color: rgba(161, 224, 243, 0.562);
+    border:1px solid rgba(252, 248, 248, 0.37);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    cursor: pointer;
+  }
+
+input{
+  display:inline;
+  font-family: Karla;
+  font-size: 13px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  border-radius: 10px;
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+}
+
+select{
+  font-family: Karla;
+  font-size: 13px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+border-radius: 10px;
+margin:8px;
+
+}
+
+
+
+.imgText{
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ margin-top:15px;
+ 
+}
+
+
+.imgContainer{
+  display: grid;
+  justify-content:space-evenly;
+  align-content: center;
+  margin-top:15px;
+  
+  
+ 
+}
+
+.socialMediaContainer{
+
+  text-align: center;
+  font-size: 20px;
+  color:rgba(10, 2, 56, 0.411);
+  font-family: Karla;
+  
+  
+
+}
+
+.socialMediaContainer > i{
+  padding: 13px;
+  font-size: 1.2em;
+  
+}
+
+
+
+.pic1, .pic2, .pic3{
+  border:rgb(168, 219, 243) solid 1px;
+  background-color: rgba(10, 120, 247, 0.178);
+  box-shadow: 0px  0px 5px 5px  rgba(152, 161, 161, 0.4), 0px 0px 18px 5px rgb(253, 253, 253) ;
+  margin-bottom:15px;
+}
+
+p{
+ text-align: center;
+ font-family: Karla;
+ 
+
+}
+
+
+.bottomPage{
+  padding:5px;
+  text-align: center;
+  font-size: 12px;
+  color:rgba(43, 36, 36, 0.445);
+  font-family: Karla;
+  background-color:rgba(154, 154, 170, 0.37) ;
+}
+
+
+
+}
+
+@media only screen and (max-width: 600px){
+  *{
+    box-sizing: border-box;
+  }
+
+ .tropicalImg{
+    background-image:url("beach.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+    border-bottom: 1px solid rgb(65, 174, 247);     
+        }
+
+
+.travelLogo{
+  font-size: 18px;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.808);
+  width:40%;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.445);
+ 
+}
+header{
+  background-color: rgba(7, 19, 189, 0.897);
+  padding:15px;
+  border: 1px  solid rgba(12, 2, 102, 0.329);
+ 
+} 
+
+.headerContainer{
+  width:60%;
+  float: right;
+font-size: 10px;
+position: relative;
+color:rgba(255, 255, 255, 0.637);
+font-family: Karla;
+display:flex;
+justify-content: space-evenly;
+top:-40px;
+
+
+}
+
+.contactContainer{
+text-align: center;
+justify-content: space-evenly;
+position: relative;
+top:-20px;
+  
+}
+
+.contactContainer > i{
+
+padding:3px;
+font-size:1.3em;
+
+
+}
+.time{
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+top:-16px;
+  
+  
+}
+
+.travelQuote{
+  
+  text-align: center;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.616);
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  
+}
+
+.encouragmentContainer{
+  color: white;
+  text-align: center;
+  font-family:Montserrat;
+  
+}
+
+.designedTravelBtn{
+  padding:15px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Karla;
+  background-color: rgba(161, 224, 243, 0.164);
+  color:rgb(255, 255, 255);
+  border:white 2px dotted;
+  box-shadow: 0px  0px 3px 3px  rgba(10, 235, 223, 0.329), 0px 0px 8px 3px rgb(253, 253, 253) ;
+  cursor: pointer;
+  width:30%;
+}
+
+label{
+  color:white;
+  font-size: 15px;
+  text-align: center;
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ padding:5px;
+ margin:5px;
+ 
+}
+
+.menu-bars {
+  position:relative;
+  top:0;
+  left:0;
+  z-index: 1;
+ 
+
+}
+
+.menu-bars .toggler {
+  position:absolute;
+  top:0;
+  left:0;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  opacity:0;
+  z-index: 1;
+}
+
+.menu-bars .hamburger {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 80px;
+  height: 50px;
+  padding:1rem;
+  background-color:transparent;
+display:flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s ease;
+
+
+
+}
+
+.menu-bars .hamburger > div {
+position: relative;
+width: 100%;
+height:6px;
+background-color:rgb(255, 255, 255);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow: 2px 2px 5px  rgb(149, 232, 238);
+z-index: 3;
+}
+
+.menu-bars .hamburger > div:before,
+.menu-bars .hamburger > div:after{
+  content: '' ;
+  position: absolute;
+  top:-10px;
+  width: 100%;
+  height: 6px;
+  background:inherit;
+  box-shadow: 2px 2px 5px rgb(149, 232, 238);
+}
+
+.menu-bars .hamburger > div:after{
+  top:10px;;
+}
+.menu-bars .toggler:checked + .hamburger > div{
+  transform:rotate(135deg);
+}
+
+.menu-bars .toggler:checked + .hamburger > div:before,
+.menu-bars .toggler:checked + .hamburger > div:after{
+  top:0;
+  transform:rotate(90deg);
+
+}
+
+.menu-bars .toggler:checked:hover + .hamburger > div{
+
+  transform: rotate(225deg);
+
+}
+
+
+
+#navContainer{
+  display: grid;
+  width:55%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  padding:1px;
+ display:none;
+  margin-top:50px;
+
+
+}
+
+#navContainer a{
+  display: grid;
+  background-color: #fff;
+  padding:13px;
+  text-align: center;
+  text-decoration: none;
+  color:rgba(2, 52, 82, 0.959);;
+  font-size: 17px;
+  font-family: Karla;
+  border-bottom: rgb(106, 106, 131) solid 1px;
+  box-shadow: 0px  0px 3px 3px  rgba(127, 216, 216, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+
+  
+}
+
+form{
+ text-align: center;
+ display:grid;
+ justify-content: center;
+ align-content: center;
+ 
+}
+
+.multiselect {
+    width: 200px;
+  position:relative;
+  left:-10px;
+  
+  }
+    
+  
+  .selectBox {
+    position: relative;
+  }
+
+
+  
+  .selectBox select {
+    border-radius: 10px;
+    border:rgba(255, 255, 255, 0.418) 2px solid;
+    width: 100%;
+    padding:7px;
+    background-color: rgba(161, 224, 243, 0.562);
+    font-size: 13px;
+    font-family: Karla;
+    color:rgb(252, 249, 249);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    
+      }
+  
+  .overSelect {
+    position: absolute;
+    left:0 ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+   
+    
+  }
+  
+  #checkboxes {
+    border-radius:5px;
+    border: 2px hsla(0, 0%, 100%, 0.411) solid;
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    position:relative;
+    left:10px;
+  }
+  
+  #checkboxes label {
+    display:block;
+    color:rgba(255, 255, 255, 0.904);
+    font-size: 13px;
+    text-align: left;
+    font-family: Karla;
+    padding:0;
+    
+  }
+  
+  #checkboxes label:hover {
+    background-color: rgba(161, 224, 243, 0.562);
+    border:1px solid rgba(252, 248, 248, 0.37);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    cursor: pointer;
+  }
+
+input{
+  display:inline;
+  font-family: Karla;
+  font-size: 13px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  border-radius: 10px;
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+}
+
+select{
+  font-family: Karla;
+  font-size: 13px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+border-radius: 10px;
+margin:8px;
+
+}
+
+
+
+.imgText{
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ margin-top:15px;
+ 
+}
+
+
+.imgContainer{
+  display: grid;
+  justify-content:space-evenly;
+  align-content: center;
+  margin-top:15px;
+  
+  
+ 
+}
+
+.socialMediaContainer{
+
+  text-align: center;
+  font-size: 20px;
+  color:rgba(10, 2, 56, 0.411);
+  font-family: Karla;
+  
+  
+
+}
+
+.socialMediaContainer > i{
+  padding: 13px;
+  font-size: 1.2em;
+  
+}
+
+
+
+.pic1, .pic2, .pic3{
+  border:rgb(168, 219, 243) solid 1px;
+  background-color: rgba(10, 120, 247, 0.178);
+  box-shadow: 0px  0px 5px 5px  rgba(152, 161, 161, 0.4), 0px 0px 18px 5px rgb(253, 253, 253) ;
+  margin-bottom:15px;
+}
+
+p{
+ text-align: center;
+ font-family: Karla;
+ 
+
+}
+
+
+.bottomPage{
+  padding:5px;
+  text-align: center;
+  font-size: 12px;
+  color:rgba(43, 36, 36, 0.445);
+  font-family: Karla;
+  background-color:rgba(154, 154, 170, 0.37) ;
+}
+
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  *{
+    box-sizing: border-box;
+  }
+
+ .tropicalImg{
+    background-image:url("beach.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+    border-bottom: 1px solid rgb(65, 174, 247);     
+        }
+
+
+.travelLogo{
+  font-size: 20px;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.808);
+  width:40%;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.445);
+ 
+}
+header{
+  background-color: rgba(7, 19, 189, 0.897);
+  padding:15px;
+  border: 2px  solid rgba(12, 2, 102, 0.329);
+ 
+} 
+
+.headerContainer{
+  width:60%;
+  float: right;
+font-size: 15px;
+position: relative;
+color:rgba(255, 255, 255, 0.637);
+font-family: Karla;
+display:flex;
+justify-content: space-evenly;
+top:-45px;
+
+
+}
+
+.contactContainer{
+text-align: center;
+justify-content: space-evenly;
+position: relative;
+top:0;
+display:flex;
+  
+}
+
+.contactContainer > i{
+
+padding:10px;
+font-size:1.5em;
+
+
+}
+.time{
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+top:-16px;
+  
+  
+}
+
+.travelQuote{
+  
+  text-align: center;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.616);
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 20px;
+  
+}
+
+.encouragmentContainer{
+  color: white;
+  text-align: center;
+  font-family:Montserrat;
+  
+}
+
+.designedTravelBtn{
+  padding:15px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Karla;
+  font-size: 25px;
+  background-color: rgba(161, 224, 243, 0.164);
+  color:rgb(255, 255, 255);
+  border:white 2px dotted;
+  box-shadow: 0px  0px 3px 3px  rgba(10, 235, 223, 0.329), 0px 0px 8px 3px rgb(253, 253, 253) ;
+  cursor: pointer;
+  width:30%;
+}
+
+label{
+  color:white;
+  font-size: 22px;
+  text-align: center;
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ padding:5px;
+ margin:5px;
+ 
+}
+
+.menu-bars {
+  position:relative;
+  top:0;
+  left:0;
+  z-index: 1;
+  
+
+}
+
+.menu-bars .toggler {
+  position:absolute;
+  top:0;
+  left:0;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  opacity:0;
+  z-index: 1;
+  display:none;
+}
+
+.menu-bars .hamburger {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 90px;
+  height: 50px;
+  padding:1rem;
+  background-color:transparent;
+display:flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s ease;
+display:none;
+
+
+}
+
+.menu-bars .hamburger > div {
+position: relative;
+width: 100%;
+height:6px;
+background-color:rgb(255, 255, 255);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow: 2px 2px 5px  rgb(149, 232, 238);
+
+}
+
+.menu-bars .hamburger > div:before,
+.menu-bars .hamburger > div:after{
+  content: '' ;
+  position: absolute;
+  top:-10px;
+  width: 100%;
+  height: 6px;
+  background:inherit;
+  box-shadow: 2px 2px 5px rgb(149, 232, 238);
+}
+
+.menu-bars .hamburger > div:after{
+  top:10px;
+}
+.menu-bars .toggler:checked + .hamburger > div{
+  transform:rotate(135deg);
+}
+
+.menu-bars .toggler:checked + .hamburger > div:before,
+.menu-bars .toggler:checked + .hamburger > div:after{
+  top:0;
+  transform:rotate(90deg);
+
+}
+
+.menu-bars .toggler:checked:hover + .hamburger > div{
+
+  transform: rotate(225deg);
+
+}
+
+
+
+#navContainer{
+  width:100%;
+  position: absolute;
+  z-index: 2;
+margin:5px;
+}
+
+#navContainer a{
+  display: inline-flex;
+  justify-content: space-evenly;
+  width:15.5%;
+  background-color: rgba(255, 255, 255, 0.849);
+  padding:15px;
+  text-align: center;
+  text-decoration: none;
+  color:rgba(2, 52, 82, 0.959);;
+  font-size: 11.8px;
+  font-family: Karla;
+  border-bottom: rgb(21, 21, 155) solid 1px;
+  box-shadow: 0px  0px 3px 3px  rgba(127, 216, 216, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+cursor: pointer;
+margin:1px;
+  
+}
+
+form{
+ text-align: center;
+ display:grid;
+ justify-content: center;
+ align-content: center;
+ 
+}
+
+.multiselect {
+    width: 250px;
+  position:relative;
+  left:-10px;
+  
+  }
+    
+  
+  .selectBox {
+    position: relative;
+  }
+
+
+  
+  .selectBox select {
+    border-radius: 10px;
+    border:rgba(255, 255, 255, 0.418) 2px solid;
+    width: 100%;
+    padding:7px;
+    background-color: rgba(161, 224, 243, 0.562);
+    font-size: 17px;
+    font-family: Karla;
+    color:rgb(252, 249, 249);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    
+      }
+  
+  .overSelect {
+    position: absolute;
+    left:0 ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+   
+    
+  }
+  
+  #checkboxes {
+    border-radius:5px;
+    border: 2px hsla(0, 0%, 100%, 0.411) solid;
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    position:relative;
+    left:10px;
+  }
+  
+  #checkboxes label {
+    display:block;
+    color:rgba(255, 255, 255, 0.904);
+    font-size: 17px;
+    text-align: left;
+    font-family: Karla;
+    padding:0;
+    
+  }
+  
+  #checkboxes label:hover {
+    background-color: rgba(161, 224, 243, 0.562);
+    border:1px solid rgba(252, 248, 248, 0.37);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    cursor: pointer;
+  }
+
+input{
+  display:inline;
+  font-family: Karla;
+  font-size: 17px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  border-radius: 10px;
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+}
+
+select{
+  font-family: Karla;
+  font-size: 17px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+border-radius: 10px;
+margin:8px;
+
+}
+
+
+
+.imgText{
+  font-size: 25px;
+  color:rgb(0, 0, 0);
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ margin-top:15px;
+ 
+}
+
+
+.imgContainer{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:15px;
+  
+}
+
+.socialMediaContainer{
+
+  text-align: center;
+  font-size: 20px;
+  color:rgba(10, 2, 56, 0.411);
+  font-family: Karla;
+  
+  
+
+}
+
+.socialMediaContainer > i{
+  padding: 20px;
+  font-size: 1.6em;
+  
+}
+
+
+
+.pic1,.pic2, .pic3{
+  border:rgb(168, 219, 243) solid 1px;
+  background-color: rgba(10, 120, 247, 0.178);
+  box-shadow: 0px  0px 5px 5px  rgba(152, 161, 161, 0.4), 0px 0px 18px 5px rgb(253, 253, 253) ;
+  margin-bottom:15px;
+  
+}
+
+
+
+
+
+p{
+ text-align: center;
+ font-family: Karla;
+ font-size:19px;
+ 
+
+}
+
+
+.bottomPage{
+  padding:5px;
+  text-align: center;
+  font-size: 15px;
+  color:rgba(43, 36, 36, 0.445);
+  font-family: Karla;
+  background-color:rgba(154, 154, 170, 0.37) ;
+}
+
+
+
+}
+
+@media only screen and (min-width:1024px) {
+  *{
+    box-sizing: border-box;
+  }
+
+ .tropicalImg{
+    background-image:url("beach.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+    border-bottom: 1px solid rgb(65, 174, 247);     
+        }
+
+
+.travelLogo{
+  font-size: 30px;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.808);
+  width:40%;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.445);
+ 
+}
+header{
+  background-color: rgba(7, 19, 189, 0.897);
+  padding:15px;
+  border: 2px  solid rgba(12, 2, 102, 0.329);
+ 
+} 
+
+.headerContainer{
+  width:60%;
+  float: right;
+font-size: 15px;
+position: relative;
+color:rgba(255, 255, 255, 0.637);
+font-family: Karla;
+display:flex;
+justify-content: space-evenly;
+top:-55px;
+
+
+}
+
+.contactContainer{
+text-align: center;
+justify-content: space-evenly;
+position: relative;
+top:-15px;
+display:flex;
+justify-content: space-between;
+  
+}
+
+.contactContainer > i{
+
+padding:19px;
+font-size:1.5em;
+
+
+}
+.time{
+  display: block;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top:-35px;
+  
+
+  
+  
+}
+
+.travelQuote{
+  
+  text-align: center;
+  font-family: Karla;
+  color:rgba(255, 255, 255, 0.616);
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 26px;
+  
+}
+
+.encouragmentContainer{
+  color: white;
+  text-align: center;
+  font-family:Montserrat;
+  
+}
+
+.designedTravelBtn{
+  padding:15px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Karla;
+  font-size: 25px;
+  background-color: rgba(161, 224, 243, 0.164);
+  color:rgb(255, 255, 255);
+  border:white 2px dotted;
+  box-shadow: 0px  0px 3px 3px  rgba(10, 235, 223, 0.329), 0px 0px 8px 3px rgb(253, 253, 253) ;
+  cursor: pointer;
+  width:30%;
+}
+
+label{
+  color:white;
+  font-size: 25px;
+  text-align: center;
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ padding:5px;
+ margin:5px;
+ 
+}
+
+.menu-bars {
+  position:relative;
+  top:0;
+  left:0;
+  z-index: 1;
+  
+
+}
+
+.menu-bars .toggler {
+  position:absolute;
+  top:0;
+  left:0;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  opacity:0;
+  z-index: 1;
+  display:none;
+}
+
+.menu-bars .hamburger {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 90px;
+  height: 50px;
+  padding:1rem;
+  background-color:transparent;
+display:flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s ease;
+display:none;
+
+
+}
+
+.menu-bars .hamburger > div {
+position: relative;
+width: 100%;
+height:6px;
+background-color:rgb(255, 255, 255);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow: 2px 2px 5px  rgb(149, 232, 238);
+
+}
+
+.menu-bars .hamburger > div:before,
+.menu-bars .hamburger > div:after{
+  content: '' ;
+  position: absolute;
+  top:-10px;
+  width: 100%;
+  height: 6px;
+  background:inherit;
+  box-shadow: 2px 2px 5px rgb(149, 232, 238);
+}
+
+.menu-bars .hamburger > div:after{
+  top:10px;
+}
+.menu-bars .toggler:checked + .hamburger > div{
+  transform:rotate(135deg);
+}
+
+.menu-bars .toggler:checked + .hamburger > div:before,
+.menu-bars .toggler:checked + .hamburger > div:after{
+  top:0;
+  transform:rotate(90deg);
+
+}
+
+.menu-bars .toggler:checked:hover + .hamburger > div{
+
+  transform: rotate(225deg);
+
+}
+
+
+
+#navContainer{
+  width:100%;
+  position: absolute;
+  z-index: 2;
+margin:5px;
+}
+
+#navContainer a{
+  display: inline-flex;
+  justify-content: space-evenly;
+  width:16%;
+  background-color: rgba(255, 255, 255, 0.849);
+  padding:15px;
+  text-align: center;
+  text-decoration: none;
+  color:rgba(2, 52, 82, 0.959);;
+  font-size: 17px;
+  font-family: Karla;
+  border-bottom: rgb(21, 21, 155) solid 1px;
+  box-shadow: 0px  0px 3px 3px  rgba(127, 216, 216, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+cursor: pointer;
+margin:1px;
+  
+}
+
+form{
+ text-align: center;
+ display:grid;
+ justify-content: center;
+ align-content: center;
+ 
+}
+
+.multiselect {
+    width: 260px;
+  position:relative;
+  left:-10px;
+  
+  }
+    
+  
+  .selectBox {
+    position: relative;
+  }
+
+
+  
+  .selectBox select {
+    border-radius: 10px;
+    border:rgba(255, 255, 255, 0.418) 2px solid;
+    width: 100%;
+    padding:7px;
+    background-color: rgba(161, 224, 243, 0.562);
+    font-size: 19px;
+    font-family: Karla;
+    color:rgb(252, 249, 249);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    
+      }
+  
+  .overSelect {
+    position: absolute;
+    left:0 ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+   
+    
+  }
+  
+  #checkboxes {
+    border-radius:5px;
+    border: 2px hsla(0, 0%, 100%, 0.411) solid;
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    position:relative;
+    left:10px;
+  }
+  
+  #checkboxes label {
+    display:block;
+    color:rgba(255, 255, 255, 0.904);
+    font-size: 19px;
+    text-align: left;
+    font-family: Karla;
+    padding:0;
+    
+  }
+  
+  #checkboxes label:hover {
+    background-color: rgba(161, 224, 243, 0.562);
+    border:1px solid rgba(252, 248, 248, 0.37);
+    box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+    cursor: pointer;
+  }
+
+input{
+  display:inline;
+  font-family: Karla;
+  font-size: 19px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  border-radius: 10px;
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+}
+
+select{
+  font-family: Karla;
+  font-size: 19px;
+  color:rgba(255, 255, 255, 0.89);
+  background-color: rgba(161, 224, 243, 0.562);
+  padding:5px;
+  border:1px dotted rgba(248, 252, 252, 0.37);
+  box-shadow: 0px  0px 3px 3px  rgba(169, 243, 243, 0.4), 0px 0px 8px 3px rgb(253, 253, 253) ;
+border-radius: 10px;
+margin:8px;
+
+}
+
+
+
+.imgText{
+  font-size: 30px;
+  color:rgb(0, 0, 0);
+  font-family: Karla;
+  display:flex;
+  justify-content: center;
+ margin-top:15px;
+ 
+}
+
+
+.imgContainer{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:15px;
+  
+}
+
+.socialMediaContainer{
+
+  text-align: center;
+  font-size: 20px;
+  color:rgba(10, 2, 56, 0.411);
+  font-family: Karla;
+  
+  
+
+}
+
+.socialMediaContainer > i{
+  padding: 25px;
+  font-size: 2em;
+  
+}
+
+
+
+.pic1,.pic2, .pic3{
+  
+  border:rgb(168, 219, 243) solid 1px;
+  background-color: rgba(10, 120, 247, 0.178);
+  box-shadow: 0px  0px 5px 5px  rgba(152, 161, 161, 0.4), 0px 0px 18px 5px rgb(253, 253, 253) ;
+  margin-bottom:15px;
+  
+}
+
+
+
+
+
+p{
+ text-align: center;
+ font-family: Karla;
+ font-size:21px;
+ 
+
+}
+
+
+.bottomPage{
+  padding:5px;
+  text-align: center;
+  font-size: 15px;
+  color:rgba(43, 36, 36, 0.445);
+  font-family: Karla;
+  background-color:rgba(154, 154, 170, 0.37) ;
+}
+
+
+
+}
