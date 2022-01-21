@@ -8,137 +8,190 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Karla|Montserrat">
     <link href="travel.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f5c7237f56.js" crossorigin="anonymous"></script>
-</head>
-<body >
-    <script src="travel.js"></script>  
-    
-    <header>
-        <div class="logoContainer">
-        <h1 class = "travelLogo">J.S.Travel Expert  </h1>
-        </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
 
-        <div class="headerContainer">
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    
+    <header class="d-flex justify-content-between align-items-center p-2 bg-info text-center text-light">
+
+<div class="logoContainer m-2">
+<h1 class="travelLogo fw-light">J.S.Travel Expert</h1>
+</div>
 
 <div class="time">
-
     <i class="far fa-clock"></i>
-    <p>Mon - Sat 9.00- 19.00 </p>
+    <h4>Mon - Sat 9.00- 19.00 </h4>
     <small>Sunday closed </small>
 </div>
 
-<div class="contactContainer">
-  <p>Contact us:</p>
+<div class="contactContainer m-2">
+  <h2 class="fw-light">Contact us</h2>
+  <div class="d-flex justify-content-between align-items-center p-2 ">
   <i class="fas fa-phone"></i>
   <i class="far fa-envelope"></i>
   <i class="fab fa-whatsapp"></i>
-  
   </div>
-</div>
+  </div>
+
  </header>
- 
-<nav id="navContainer">
-    <a     href =#Home >Home</a>
-    <a     href =#Aboutus>About us </a>
-    <a     href =#Destinations>Destinations</a>    
-    <a     href =#Holidays>Holidays</a>
-    <a     href =#Cruises>Cruises</a>
-    <a     href =#Offers>Special Offers</a>
-
-</nav> 
-<main >
-  <div class="menu-bars" >
-    <input onClick = "activeNav()" type="checkbox" class="toggler">
-    <div id= "mag" class= "hamburger"><div ></div></div>
-<div class = "tropicalImg">
-<div class="travelQuoteContainer">
-    <p class="travelQuote" >"A journey of a thousand miles begins with a single step"
-    </p>
-
-    <div class="encouragmentContainer">
-<h1>Let's begin your journey! </h1>
-<button type = "submit" class="designedTravelBtn">Explore... </button>
-  </div>  
-</div>
-    <form>
-        <div class="multiselect">
-            <div class="selectBox" onclick="showCheckboxes()">
-                <label for= "yourDestination "class="where">Where?</label>
-              <select>
-                <option>Select your destination</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div id="checkboxes">
-              <label for="Europe">
-                <input type="checkbox">Europe</label>
-              <label for="NorthAmerica">
-                <input type="checkbox">North America</label>
-              <label for="SouthAmerica">
-                <input type="checkbox">South America</label>
-                <label for="Asia">
-                    <input type="checkbox" >Asia</label>
-                  <label for="Africa">
-                    <input type="checkbox" >Africa</label>
-                  <label for="Australia">
-                    <input type="checkbox" >Australia</label>
-            </div>
-          </div>
-     
-     <label for = "when">  When</label>
-     <input type="date" id="fromDate" name="customerFromDate" placeholder="Any date..."> 
-     <label for = "howLong">To?</label>
-     <input type="date" id="toDate" name="holidayDuration" placeholder="Any date..."> 
-<label for="room">Room(s)</label>
-<select type="number" name="roomAmount" >
-   
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-</select>
-</div>
-</form> 
 
 
 
+<main>
+  
 
-<span class="imgText"> Our popular destinations </span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-secondary" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Holidays</a>
+          </li>
 
-<div class=imgContainer>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cruises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Special Offers</a>
+          </li>
+         
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="pic1">
-    <img src="Aruba.jpg" alt="ArubaPic" style= width:250px;>
-<p>Aruba £1890/14 days </p>
+  <section class=" img-fluid p-4  bg obj-fit-cover "
+  style="
+    background-image: url(./Images/beach.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    ">
+  <div class="travelQuoteContainer mt-4  text-center" >
+  <h1 class="travelQuote text-light fw-normal" >"A journey of a thousand miles begins with a single step"
+  </h1>
   </div>
 
-<div class = "pic2">
-    <img src = "seychelles.jpg" alt="SeychellesPic" style= width:250px height="180px;">
-    <p>Seychelles £1450/ 10days</p>
+  <div class="encouragmentContainer mt-4 text-center text-light">
+  <h2 class="fw-normal">Let's begin your journey! </h2>
+  <button type="button" class="btn btn-outline-light btn-lg mt-4 mb-4">Explore</button>
+  </div> 
+
+  <div class="dropdown position-relative p-4" >
+    <button class="btn btn-outline-info dropdown-toggle btn-lg position-absolute top-50 start-50 translate-middle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+      Our Destinations
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li><button class="dropdown-item" type="button">Europe</button></li>
+      <li><button class="dropdown-item" type="button">Africa</button></li>
+      <li><button class="dropdown-item" type="button">Asia</button></li>
+      <li><button class="dropdown-item" type="button">Australia</button></li>
+      <li><button class="dropdown-item" type="button">South America</button></li>
+      <li><button class="dropdown-item" type="button">NorthAmerica</button></li>
+    </ul>
   </div>
+  
+  
+     <div class="calendar p-4 position-relative text-center">
+     <label class="text-light m-2" for = "when">  When</label>
+     <input class=" p-2 m-2 btn btn-outline-light " type="date" id="fromDate" name="customerFromDate" placeholder="Any date..."> 
+     <label class="text-light m-2"  for = "howLong">To?</label>
+     <input class=" p-2 m-2 btn btn-outline-light" type="date" id="toDate" name="holidayDuration" placeholder="Any date..."> 
+    
+     <div class="dropdown position-relative p-4">
+      <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+        Room(s)
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">1</button></li>
+        <li><button class="dropdown-item" type="button">2</button></li>
+        <li><button class="dropdown-item" type="button">3</button></li>
+        <li><button class="dropdown-item" type="button">4</button></li>
+        <li><button class="dropdown-item" type="button">5</button></li>
+      </ul>
+    </div>
+  </section>
 
-<div class="pic3">
-    <img src = "venice.jpg" class="pic2size" alt="VenicePic" style= width:250px; >
-    <p>Venice £450/ 7 days </p>
+<section>
+<h1 class="imgText p-4 fw-light"> Our popular destinations </h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/Aruba.jpg" class="card-img-top" alt="ArubaPic">
+      <div class="card-body">
+        <h5 class="card-title text-center">Aruba</h5>
+        <p class="card-text">The people of Aruba look forward to greeting you on One happy island with warmth, gratitude and, above all, your safety and well-being as our most important priority. Now is the time to relax, renew, refresh and rediscover Your Happy Place in Aruba.</p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">£1890/14 days</small>
+      </div>
+    </div>
   </div>
-
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/seychelles.jpg" class="card-img-top" alt="SeychellesPic">
+      <div class="card-body">
+        <h5 class="card-title text-center">Seychelles</h5>
+        <p class="card-text">Take to the waters on Seychelles holidays, with some of the best snorkelling and scuba diving in the world. Paddle in tranquil lagoons or plunge down to reefs bursting with sea life. Discover the wonders of Bay Ternay National Marine Park and Sunset beach or explore the dive sites of Shark Bank and Port Launay Marine National Park.</p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">Seychelles £1450/ 10days</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/venice.jpg" class="card-img-top" alt="VenicePic">
+      <div class="card-body">
+        <h5 class="card-title text-center">Venice</h5>
+        <p class="card-text">Holidays in Venice promise to capture your imagination in a way that’s unique to the historic floating city. It’s built across more than 100 islands in the Venetian lagoon. The fabled canals host everyday life, but the backdrops are pure fantasy. Lose yourself in the maze of narrow streets and admire architectural gems. Most of all, prepare for the jaw-dropping beauty that’s inspired poets and artists for centuries.</p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">Venice £450/ 7 days</small>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
 
-<div class="socialMediaContainer">
-  <p> Find us on:</p>
-  <i class="fab fa-facebook"></i>
-  <i class="fab fa-instagram"></i>
-  <i class="fab fa-google-plus-g"></i>
-  <i class="fab fa-twitter"></i>
-  <i class="fab fa-pinterest"></i>
-  <i class="fab fa-youtube"></i>
+
+
+
+
+<section>
+
+<div class="socialMediaContainer p-4 ">
+  <h2 class=" fw-light"> Find us on:</h2>
+  <div class="d-flex justify-content-evenly align-items-center p-4 fs-2">
+  <i class="fab fa-facebook text-secondary"></i>
+  <i class="fab fa-instagram text-secondary"></i>
+  <i class="fab fa-google-plus-g text-secondary"></i>
+  <i class="fab fa-twitter text-secondary"></i>
+  <i class="fab fa-pinterest text-secondary"></i>
+  <i class="fab fa-youtube text-secondary"></i>
+  </div>
 </div>
+</section>
 
 </main>
 
 
 
-<footer class="footer">
+<footer class="footer bg-info p-2 text-center text-light fw-light">
     <div class="bottomPage">
     <p>© J.S.Travel Expert <br> All rights reserved.</p>
     </div>
